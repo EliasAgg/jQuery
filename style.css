@@ -1,3 +1,19 @@
 body{
     font-family: calibri;
+    display: flex;
+}
+
+#cercleVert{
+    border: 1px solid green;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.carreRouge{
+    border: 1px solid red;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
 }
