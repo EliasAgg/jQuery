@@ -3,17 +3,20 @@ body{
     display: flex;
 }
 
-#cercleVert{
-    border: 1px solid green;
+#cercle{
+/*    border: 1px solid green;*/
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-right: 20px;
+    background-color: green;
 }
 
-.carreRouge{
-    border: 1px solid red;
+.carre{
+/*    border: 1px solid red;*/
     width: 150px;
     height: 150px;
     margin-right: 20px;
+    background-color: red;
 }
+
