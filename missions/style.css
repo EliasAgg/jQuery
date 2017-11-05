@@ -8,9 +8,9 @@ body{
     color: white;
     background: #3E5151;
     background: linear-gradient(to bottom, #333333, #c94b4b);
-    background-repeat: no-repeat;
+/*    background-repeat: no-repeat;*/
     background-size: 100%;
-    background-image: url("https://mars.nasa.gov/assets/red_planet_bg.png");
+/*    background-image: url("https://mars.nasa.gov/assets/red_planet_bg.png");*/
 }
 
 html{
@@ -87,7 +87,7 @@ section{
 }
 
 .article{
-    height: 35vh;
+    height: 80vh;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -95,52 +95,12 @@ section{
     background-size: 100%;
     background-color: rgba(255, 255, 255, 0.3);
     border: 1px dashed rgba(255, 255, 255, 0.3);
-    display: flex;
-}
-
-.articleTitle{
-    height: 20vh;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
-    border: 1px dashed rgba(255, 255, 255, 0.3);
-    display: flex;
-}
-
-#welcome{
-    margin: 5% auto 0 auto;
-    font-size: 30pt;
-/*    display: none;*/
-}
-
-.icon{
-    margin: auto;
     display: flex;
     justify-content: center;
 }
 
-#begin{
-    height: 50px;
+.reveal{
     margin: auto;
-    background-color: #eeeeee; /* Green */
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    transition-duration: 0.4s;
-    font-family: Rajdhani;
-}
-
-#begin:hover{
-    background-color: #111111; /* Green */
-    color: white;
-    cursor: pointer;
 }
 /*-----------------------------------------------------------------------------*/
 /*                      STUFF ABOUT FOOTER*/

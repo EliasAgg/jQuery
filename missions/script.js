@@ -29,7 +29,21 @@ $(".fusee").mouseenter(function(){
         "width":"100px",
         "height":"100px",
     }, 150);
-})
+});
+
+/*-----------------------------------------------------------------------------*/
+//                      Display stuff on scroll
+/*-----------------------------------------------------------------------------*/
+$(".reveal").hide();
+
+$(window).on('scroll', function() {
+    var y_scroll_pos = window.pageYOffset;
+    var scroll_pos_test = 50;
+
+    if(y_scroll_pos > scroll_pos_test) {
+        $(".reveal").show();
+    }
+});
 
 /*-----------------------------------------------------------------------------*/
 //                      Print multiple items
@@ -75,11 +89,7 @@ function revealText(target, text, i, interval) {
         setTimeout(function () { revealText(target, text, i, interval); }, interval);
     }
 }
-revealText("#targetText", "Mission to Mars: ", 0, 50);
-$(document).ready(function(){
-    $("#welcome").hide();
-    $("#welcome").fadeIn(800);
-});
+revealText("#targetText", "Mission to Mars: ", 0, 50);   
 
 /*-----------------------------------------------------------------------------*/
 //                      Change title when nav hover
@@ -105,9 +115,9 @@ $("#nav3").mouseenter(
     }
 );
 
-//$("#nav4").mouseenter(
-//    function(){
-//        document.getElementById("newTargetText").innerHTML = " ";
-//        revealText("#newTargetText", "navigation #4", 0, 50);
-//    }
-//);
+$("#nav4").mouseenter(
+    function(){
+        document.getElementById("newTargetText").innerHTML = " ";
+        revealText("#newTargetText", "navigation #4", 0, 50);
+    }
+);
