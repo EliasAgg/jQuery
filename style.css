@@ -1,22 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Fjalla+One');
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Rajdhani');
+
+
 body{
-    font-family: calibri;
+    font-family: 'Abel', sans-serif;
+    color: white;
+background: #3E5151;  /* fallback for old browsers */
+background: linear-gradient(to bottom, #4b134f, #c94b4b);
+background-repeat: no-repeat;
+    /*
+    W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+html{
+    height: 100%-50;
+}
+
+nav{
     display: flex;
+    min-height: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+/*    background-color: rgba(255, 255, 255, 0.1);*/
+/*    position: absolute;*/
+/*    top: 0;*/
+    left: 0;
+    right: 0;
+    justify-content: flex-end;
 }
 
-#cercle{
-/*    border: 1px solid green;*/
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-    background-color: green;
+.yo{
+    position: absolute;
+    left:0;
 }
 
-.carre{
+
+.navigation{
+    text-align: center;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+}
+
+.container div{
+/*    background-color: aqua;*/
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 175px;
+}
+
+.container{
+    display: flex;
+/*    background-color: pink;*/
+}
+
+footer{
+    display: flex;
+    height: 128px;
 /*    border: 1px solid red;*/
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-    background-color: red;
+/*    background-color: grey;*/
+    justify-content:center;
+/*    position: absolute;*/
+/*    bottom: 0;*/
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+/*    background-color: rgba(255, 255, 255, 0.1);*/
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.target{
+    font-size: 28pt;
+    margin: auto;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.target2{
+    font-size: 18pt;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+a:hover{
+    color: indianred;
+}
+
+.logo{
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+section{
+/*    display: block;*/
+    background-image: url("img/");
+    background-size: 100%;
+    background-position: center;
+/*    background-color: #333333;*/
+/*    position: absolute;*/
+/*    top: 100px;*/
+    left: 0;
+    right: 0;
+/*    bottom: 100px;*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+}
+
+.containerFooter{
+/*    background-color: pink;*/
+    margin: auto;
+}
+
+.article{
+    height: 100vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+/*    border: 1px dotted white;*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+/*    border: 1px dotted white;*/
+}
+
+.logo{
+    height: 100px;
+    position: relative;
+    display: block;
+}
+
+#blinking{
+    opacity:1;
+}
+
+#tickets{
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 32pt;
+    
+}
+
+#tickets:hover{
+    text-shadow: 0px 0px 5px white;
+    color: white;
+}
+
+#targetSub{
+    font-size: 11pt;
+}
