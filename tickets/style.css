@@ -2,7 +2,7 @@
 /*                      GENERAL AND BODY STUFF*/
 /*-----------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Rajdhani|Abel|Fjalla+One');
-
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended|Ubuntu+Mono');
 body{
     font-family: 'Abel', sans-serif;
     color: white;
@@ -10,7 +10,7 @@ body{
     background: linear-gradient(to bottom, #333333, #c94b4b);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-image: url("https://mars.nasa.gov/assets/red_planet_bg.png");
+/*    background-image: url("https://mars.nasa.gov/assets/red_planet_bg.png");*/
 }
 
 html{
@@ -87,16 +87,145 @@ section{
 }
 
 .article{
-    height: 80vh;
-    width: 80%;
+    height: 65vh;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: rgba(255, 255, 255, 0.3);
     border: 1px dashed rgba(255, 255, 255, 0.3);
+    display: flex;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
+#background{
+    content: "";
+    background: url("http://media-channel.nationalgeographic.com/media/uploads/photos/content/photo/2016/08/29/MARS_Helmets_DL.jpg");
+    background-position: bottom;
+    opacity: 0.5;
+/*    top: 0;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    right: 0;*/
+    position: inherit;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#selectablePpl{
+    background-image: url("https://i.imgur.com/vvmf74H.png");
+}
+
+#ticketImageTop{
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 30%;
+    margin: auto;
+    height: 7%;
+    background-color: #eeeeee;
+    width: 45%;
+    border-radius: 30px 30px 0 0;
+    z-index: 1;
+    border-bottom: 1px dashed lightgrey;
+    display: flex;
+}
+
+#ticketImageBody{
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 35%;
+    width: 45%;
+    height: 30%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+}
+
+#ticketImageBottom{
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 30%;
+    margin: auto;
+    height: 7%;
+    background-color: #eeeeee;
+    width: 45%;
+    border-radius: 0 0 30px 30px;
+    border-top: 1px dashed lightgrey;
+    display: flex;
+}
+
+#form{
+    width: 100px;
+}
+
+.formTickets{
+    margin: auto;
+    top: 50%;
+    width: 50%;
+}
+
+.ticketText{
+    position: relative;
+    left: 5%;
+    top: 35%;
+    margin: auto;
+/*    background-color: red;*/
+    color: black;
+}
+
+.ticketTextMini{
+    position: relative;
+    left: 5%;
+    top: 35%;
+    margin: auto;
+/*    background-color: red;*/
+    color: dimgrey;
+}
+
+.ticketColumn{
+    margin: auto;
+}
+
+#spacexLogoTicket, #nasaLogoTicket{
+    height: 20px;
+}
+
+#centerTextTicket{
+    font-family: 'Libre Barcode 39 Extended', cursive;
+    font-size: 35px;
+    color: black;
+}
+
+.persona{
+    margin: auto;
+}
+
+.passengerNameLabel, .passengerAgeLabel{
+    color: grey;
+}
+
+.passengerName, .passengerAge{
+    color: black;
+}
+
+#buttonTicketThing{
+    height: 30px;
+}
+
+.formTicket{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 100px;
+}
 /*-----------------------------------------------------------------------------*/
 /*                      STUFF ABOUT FOOTER*/
 /*-----------------------------------------------------------------------------*/
@@ -113,6 +242,7 @@ footer{
     height: 50px;
     margin-top: auto;
     margin-bottom: auto;
+    z-index: 2;
 }
 
 .fusee{
@@ -125,13 +255,7 @@ footer{
     margin: auto;
 }
 
-#tickets{
-    font-family: 'Libre Barcode 39 Text', cursive;
-    font-size: 32pt;
+#nasaLogo{
+    height: 90px;
     opacity: 0.5;
-}
-
-#tickets:hover{
-    color: white;
-    opacity: 1;
 }

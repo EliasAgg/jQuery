@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------*/
-//                      rocket launch
+//                      Rocket launch
 /*-----------------------------------------------------------------------------*/
 $(".fusee").click(function(){
    $(this).animate({
@@ -11,6 +11,20 @@ $(".fusee").click(function(){
         "bottom":"0px",
    }, 3000);
 });
+
+/*-----------------------------------------------------------------------------*/
+//                      Ticket nasa logo opacity
+/*-----------------------------------------------------------------------------*/
+$("#nasaLogo").mouseenter(function(){
+    $(this).animate({
+        "opacity":"1"
+    }, 150);
+}).mouseleave(function(){
+    $(this).animate({
+        "opacity":"0.5"
+    }, 150);
+});
+
 
 /*-----------------------------------------------------------------------------*/
 //                      Rocket hover feedback
@@ -48,15 +62,6 @@ $("#buttonFetch1").click(function(){
     }
 });
 
-$(window).on('scroll', function() {
-    var y_scroll_pos = window.pageYOffset;
-    var scroll_pos_test = 50;
-
-    if(y_scroll_pos > scroll_pos_test) {
-        alert("whes");
-    }
-});
-
 /*-----------------------------------------------------------------------------*/
 //                      Blinking
 /*-----------------------------------------------------------------------------*/
@@ -79,29 +84,29 @@ function revealText(target, text, i, interval) {
         setTimeout(function () { revealText(target, text, i, interval); }, interval);
     }
 }
-revealText("#targetText", "Mission to Mars: ", 0, 50);   
+revealText("#targetText", "Ticket to Mars", 0, 50);   
 
 /*-----------------------------------------------------------------------------*/
-//                      Change title when nav hover
+//                      Change title when hover nav
 /*-----------------------------------------------------------------------------*/
 $("#nav1").mouseenter(
     function(){
         document.getElementById("newTargetText").innerHTML = " ";
-        revealText("#newTargetText", "Missions", 0, 50);
+        revealText("#newTargetText", " // Missions", 0, 50);
     }
 );
 
 $("#nav2").mouseenter(
     function(){
         document.getElementById("newTargetText").innerHTML = " ";
-        revealText("#newTargetText", "The planet", 0, 50);
+        revealText("#newTargetText", " // The planet", 0, 50);
     }
 );
 
 $("#nav3").mouseenter(
     function(){
         document.getElementById("newTargetText").innerHTML = " ";
-        revealText("#newTargetText", "Videos", 0, 50);
+        revealText("#newTargetText", " // Videos", 0, 50);
     }
 );
 
