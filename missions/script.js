@@ -36,12 +36,40 @@ $(".fusee").mouseenter(function(){
 /*-----------------------------------------------------------------------------*/
 $(".reveal").hide();
 
+$(".reveal2").hide();
+
+$(".reveal3").hide();
+
+$("#reveal4").hide();
+
+$(document).ready(function(){
+    $(".reveal").fadeIn(1000);
+});
+
 $(window).on('scroll', function() {
     var y_scroll_pos = window.pageYOffset;
-    var scroll_pos_test = 50;
+    var scroll_pos_test = 450;
 
     if(y_scroll_pos > scroll_pos_test) {
-        $(".reveal").show();
+        $(".reveal2").fadeIn();
+    }
+});
+
+$(window).on('scroll', function() {
+    var y_scroll_pos = window.pageYOffset;
+    var scroll_pos_test = 1200;
+
+    if(y_scroll_pos > scroll_pos_test) {
+        $(".reveal3").fadeIn();
+    }
+});
+
+$(window).on('scroll', function() {
+    var y_scroll_pos = window.pageYOffset;
+    var scroll_pos_test = 1600;
+
+    if(y_scroll_pos > scroll_pos_test) {
+        $("#reveal4").fadeIn();
     }
 });
 
@@ -77,7 +105,7 @@ function blinkC(target){
 }
 
 $(document).ready(function() {
-    blinkC("#blinking");  
+    blinkC(".blinking");  
 });
 
 /*-----------------------------------------------------------------------------*/
@@ -89,7 +117,8 @@ function revealText(target, text, i, interval) {
         setTimeout(function () { revealText(target, text, i, interval); }, interval);
     }
 }
-revealText("#targetText", "Mission to Mars: ", 0, 50);   
+revealText("#targetText", "Mission to Mars: ", 0, 50);
+revealText("#yoTitle", "Mars mission's chronology", 0, 50);
 
 /*-----------------------------------------------------------------------------*/
 //                      Change title when nav hover

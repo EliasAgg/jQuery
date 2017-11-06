@@ -99,8 +99,46 @@ section{
     justify-content: center;
 }
 
-.reveal{
+.reveal, .reveal2, .reveal3, #reveal4{
     margin: auto;
+    font-size: 34pt;
+    width: 25%;
+}
+
+#textMission1, #textMission3{
+    font-size: 18pt;
+    margin: auto;
+    width: 50%;
+    color: #eeeeee;
+    opacity: 0.8;
+/*    background-color: pink;*/
+    text-align:justify;
+}
+
+#textMission2{
+    font-size: 18pt;
+    margin: auto;
+    width: 50%;
+    color: #eeeeee;
+    opacity: 0.8;
+    text-align:justify;
+}
+
+.title{
+    font-weight:bold;
+    font-size: 22pt;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#yo{
+    height: 100px;
+    display: flex;
+    background-color: rgba(255, 128, 255, 0.3);
+}
+
+#yoTitle{
+    margin: auto;
+    font-size: 25pt;
 }
 /*-----------------------------------------------------------------------------*/
 /*                      STUFF ABOUT FOOTER*/

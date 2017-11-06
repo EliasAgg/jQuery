@@ -30,7 +30,6 @@ textarea{
     outline: none;
     width: 150px;
     height: 20px;
-/*    opacity: 0.2;*/
 }
 
 /*-----------------------------------------------------------------------------*/
@@ -141,6 +140,12 @@ section{
     background-color: #111111; /* Green */
     color: white;
     cursor: pointer;
+}
+
+#linkButton{
+     display: inline-block;
+    height: 50px;
+    margin: auto;
 }
 /*-----------------------------------------------------------------------------*/
 /*                      STUFF ABOUT FOOTER*/
